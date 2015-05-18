@@ -2,6 +2,7 @@ __author__ = 'Tones'
 
 import Pyro4
 from optparse import OptionParser
+import time
 
 class Server(object):
 
@@ -9,6 +10,7 @@ class Server(object):
         pass
 
     def test(text):
+        time.sleep(6)
         return text + text
 
 def main(daemon_name):
